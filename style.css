@@ -7,28 +7,90 @@
   overflow: hidden;
 }
 
-.section-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #23bda0;
-  z-index: -2;
+
+
+@media only screen and (min-width: 768px) {
+  .hero-image {
+    width: 75%;
+    height: 100%;
+    margin-left: 12.5%;
+  }
+
+  .section-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #23bda0;
+    z-index: -2;
+  }
+
+  .window-background {
+    animation: background-color 20s cubic-bezier(.81,-0.46,.19,1.33) infinite;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+    left: 12.5%;
+  }
+
+  /* terminal */
+  .fake-terminal {
+    display: inline-block;
+    position: absolute;
+    top: 43%;
+    width: 26%;
+    height: 26%;
+    z-index: 1;
+    left: 38.7%;
+  }
+
+  .fake-buttons {
+    height: 60%;
+    width: 4%;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin-top: 1.3%;
+    margin-left: 2%;
+    position: relative;
+    background-color: #ff3b47;
+    border-color: #9d252b;
+    display: inline-block;
+  }
+
+  .fake-menu {
+    display: flex;
+    box-sizing: border-box;
+    height: 10%;
+    background-color: #bbb;
+    margin: 0 auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+
+  .fake-screen {
+    height: 90%;
+    background-color: #151515;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .fake-screen > p {
+    position: relative;
+    top: 9%;
+    left: 3%;
+    margin: 0 0 3%;
+    text-align: left;
+    font-size: 1.5vw;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  } 
+
 }
 
-.hero-image {
-  width: 75%;
-  height: 100%;
-  margin-left: 12.5%;
-}
-
-.window-background {
-  animation: background-color 20s cubic-bezier(.81,-0.46,.19,1.33) infinite;
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  z-index: -1;
-  left: 12.5%;
-}
 
 @keyframes background-color {
   0% {
@@ -42,29 +104,7 @@
   }
 }
 
-/* terminal */
-.fake-terminal {
-  display: inline-block;
-  position: absolute;
-  top: 43%;
-  width: 26%;
-  height: 26%;
-  z-index: 1;
-  left: 38.7%;
-}
 
-.fake-buttons {
-  height: 60%;
-  width: 4%;
-  border-radius: 50%;
-  border: 1px solid #000;
-  margin-top: 1.3%;
-  margin-left: 2%;
-  position: relative;
-  background-color: #ff3b47;
-  border-color: #9d252b;
-  display: inline-block;
-}
 
 .fake-minimize {
   background-color: #ffc100;
@@ -76,37 +116,7 @@
   border-color: #049931;
 }
 
-.fake-menu {
-  display: flex;
-  box-sizing: border-box;
-  height: 10%;
-  background-color: #bbb;
-  margin: 0 auto;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-}
 
-.fake-screen {
-  height: 90%;
-  background-color: #151515;
-  box-sizing: border-box;
-  margin: 0 auto;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.fake-screen > p {
-  position: relative;
-  top: 9%;
-  left: 3%;
-  margin: 0 0 3%;
-  text-align: left;
-  font-size: 1.5vw;
-  font-family: monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-} 
 
 .fake-screen span {
   color: #fff;
@@ -269,7 +279,17 @@
   }
 }
 
-/* badges */
+/* about */
+.about {
+  width: 100vw;
+  max-width: 100%;
+  display: flex
+}
+
+.badges {
+  width: 50%;
+}
+
 i {
   font-size: 10vw;
 }
