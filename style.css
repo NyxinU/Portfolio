@@ -1,27 +1,16 @@
-/* banner */
-.post-header {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-
-
-@media only screen and (min-width: 768px) {
-  .hero-image {
-    width: 75%;
-    height: 100%;
-    margin-left: 12.5%;
+  /* banner */
+  .post-header {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
   }
 
-  .section-background {
-    position: absolute;
-    width: 100%;
+  .hero-image {
+    margin-left: -40%;
+    width: 170%;
     height: 100%;
-    background-color: #23bda0;
-    z-index: -2;
   }
 
   .window-background {
@@ -30,7 +19,6 @@
     height: 100%;
     width: 50%;
     z-index: -1;
-    left: 12.5%;
   }
 
   /* terminal */
@@ -38,10 +26,10 @@
     display: inline-block;
     position: absolute;
     top: 43%;
-    width: 26%;
+    width: 58%;
     height: 26%;
     z-index: 1;
-    left: 38.7%;
+    left: 20%;
   }
 
   .fake-buttons {
@@ -78,19 +66,56 @@
 
   .fake-screen > p {
     position: relative;
-    top: 9%;
+    top: 12%;
     left: 3%;
     margin: 0 0 3%;
     text-align: left;
-    font-size: 1.5vw;
+    font-size: 3.1vw;
     font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
   } 
 
-}
+@media only screen and (min-width: 768px) {
+  .hero-image {
+    width: 85%;
+    height: 100%;
+    margin-left: 7.5%;
+  }
 
+  .section-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #23bda0;
+    z-index: -2;
+  }
+
+  .window-background {
+    left: 12.5%;
+  }
+
+  /* terminal */
+  .fake-terminal {
+    width: 30%;
+    z-index: 1;
+    left: 36.9%;
+  }
+
+  .fake-screen {
+    height: 90%;
+    background-color: #151515;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .fake-screen > p {
+    font-size: 1.6vw;
+  }
+}
 
 @keyframes background-color {
   0% {
@@ -104,8 +129,6 @@
   }
 }
 
-
-
 .fake-minimize {
   background-color: #ffc100;
   border-color: #9d802c;
@@ -116,8 +139,6 @@
   border-color: #049931;
 }
 
-
-
 .fake-screen span {
   color: #fff;
   font-weight: bold;
@@ -125,62 +146,41 @@
 
 .line1 {
   color: #9CD9F0;
-  -webkit-animation: type .5s 1s steps(20, end) forwards;
-  -moz-animation: type .5s 1s steps(20, end) forwards;
-  -o-animation: type .5s 1s steps(20, end) forwards;
-  animation: type .5s 1s steps(20, end) forwards;
-}
-
-.cursor1 {
-  -webkit-animation: blink 1s 2s 1 forwards;
-  -moz-animation: blink 1s 2s 1 forwards;
-  -o-animation: blink 1s 2s 1 forwards;
-  animation: blink 1s 2s 1 forwards;
+  -webkit-animation: type .9s 1s steps(20, end) forwards;
+  -moz-animation: type .9s 1s steps(20, end) forwards;
+  -o-animation: type .9s 1s steps(20, end) forwards;
+  animation: type .9s 1s steps(20, end) forwards;
 }
 
 .line2 {
   color: #CDEE69;
-  -webkit-animation: type 1s 3s steps(20, end) forwards;
-  -moz-animation: type 1s 3s steps(20, end) forwards;
-  -o-animation: type 1s 3s steps(20, end) forwards;
-  animation: type 1s 3s steps(20, end) forwards;
-}
-
-.cursor2 {
-  -webkit-animation: blink 1s 4s 1 forwards;
-  -moz-animation: blink 1s 4s 1 forwards;
-  -o-animation: blink 1s 4s 1 forwards;
-  animation: blink 1s 4s 1 forwards;
+  -webkit-animation: type .9s 2.5s steps(20, end) forwards;
+  -moz-animation: type .9s 2.5s steps(20, end) forwards;
+  -o-animation: type .9s 2.5s steps(20, end) forwards;
+  animation: type .9s 2.5s steps(20, end) forwards;
 }
 
 .line3 {
   color: #E09690;
-  -webkit-animation: type 1s 5s steps(20, end) forwards;
-  -moz-animation: type 1s 5s steps(20, end) forwards;
-  -o-animation: type 1s 5s steps(20, end) forwards;
-  animation: type 1s 5s steps(20, end) forwards;
-}
-
-.cursor3 {
-  -webkit-animation: blink 1s 6s 1 forwards;
-  -moz-animation: blink 1s 6s 1 forwards;
-  -o-animation: blink 1s 6s 1 forwards;
-  animation: blink 1s 6s 1 forwards;
+  -webkit-animation: type .9s 4s steps(20, end) forwards;
+  -moz-animation: type .9s 4s steps(20, end) forwards;
+  -o-animation: type .9s 4s steps(20, end) forwards;
+  animation: type .9s 4s steps(20, end) forwards;
 }
 
 .line4 {
   color: #fff;
-  -webkit-animation: type 1s 7s steps(20, end) forwards;
-  -moz-animation: type 1s 7s steps(20, end) forwards;
-  -o-animation: type 1s 7s steps(20, end) forwards;
-  animation: type 1s 7s steps(20, end) forwards;
+  -webkit-animation: type .9s 5.5s steps(20, end) forwards;
+  -moz-animation: type .9s 5.5s steps(20, end) forwards;
+  -o-animation: type .9s 5.5s steps(20, end) forwards;
+  animation: type .9s 5.5s steps(20, end) forwards;
 }
 
 .cursor4 {
-  -webkit-animation: blink 1s 8s infinite;
-  -moz-animation: blink 1s 8s infinite;
-  -o-animation: blink 1s 8s infinite;
-  animation: blink 1s 8s infinite;
+  -webkit-animation: blink 1s 7s infinite;
+  -moz-animation: blink 1s 7s infinite;
+  -o-animation: blink 1s 7s infinite;
+  animation: blink 1s 7s infinite;
 }
 
 @-webkit-keyframes blink {
@@ -282,12 +282,10 @@
 /* about */
 .about {
   width: 100vw;
-  max-width: 100%;
-  display: flex
 }
 
 .badges {
-  width: 50%;
+
 }
 
 i {
