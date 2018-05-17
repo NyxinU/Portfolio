@@ -282,10 +282,21 @@
 
 .avatar {
   border-radius: 50%;
+  width: 25vw;
+}
+
+.badge-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.badge-icon {
+  justify-self: center;
 }
 
 i {
   font-size: 10vw;
+
 }
 
 .icon-reactjs {
@@ -330,11 +341,6 @@ i {
 
 .icon-postgres {
   color:
-}
-
-
-.intro {
-  height: 30vh;
 }
 
 /* Projects */
