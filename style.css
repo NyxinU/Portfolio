@@ -288,15 +288,22 @@
 .badge-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 1em;
 }
 
 .badge-icon {
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 i {
   font-size: 10vw;
+}
 
+.badge-label {
+  font-size: 3vw;
 }
 
 .icon-reactjs {
@@ -316,7 +323,9 @@ i {
 }
 
 .icon-javascript {
-  color:
+  position: relative;
+  left: 5%;
+  color: #F0E03F;
 }
 
 .icon-ruby {
@@ -324,23 +333,27 @@ i {
 }
 
 .icon-jquery {
-  color:
+  color: #0065A1;
 }
 
 .icon-sass {
-  color:
+  color: #DC5198;
+}
+
+.icon-react-native {
+  color: #4d4d4d;
 }
 
 .icon-git {
-  color:
+  color: #DC5198;
 }
 
 .icon-npm {
-  color:
+  color: #E60000;
 }
 
 .icon-postgres {
-  color:
+  color: #286693;
 }
 
 /* Projects */
@@ -351,10 +364,47 @@ i {
 }
 
 .project-container {
-  margin-bottom: 3vh;
-  box-shadow: 5px 10px 8px #888888;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  height: 46vh;
+  margin-bottom: 4vh;
+  /* box-shadow: 5px 10px 8px #888888; */
+}
+
+.overlay {
+  position: absolute;
+  width: 90vw;
+  height: 46vh;
+  border-radius: 4vw; 
+  z-index: 2;
+}
+
+.overlay-artis {
+  background-color: rgba(0, 75, 30, 0.65);
+}
+
+.overlay-wunderlist {
+  background-color: rgba(25, 10, 0, 0.65);
+}
+
+.overlay-brain {
+  background-color: rgba(0, 85, 99, 0.65);
+}
+
+.overlay-leather {
+  background-color: rgba(33, 30, 0, 0.65);
+}
+
+.project-title {
+  position: absolute;
+  color: white;
+  z-index: 3;
 }
 
 .project-thumbnail {
-  width: 90vw;
+  width: 100%;
+  height: 100%;
+  border-radius: 4vw; 
 }
