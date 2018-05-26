@@ -3,23 +3,23 @@ var overlays = document.getElementsByClassName("overlay");
 // add event listener on overlays
 for (let index = 0; index < overlays.length; index++) {
   const element = overlays[index];
-  element.addEventListener("click", function(event) { showCaption(this, event);});
+  element.addEventListener("click", function(event) { showCaption(this, event); });
 }
 
-var closeCaptions = () => {
+var closeCaptions = (targetCaption) => {
   const captions = document.getElementsByClassName("caption");
   for (let index = 0; index < captions.length; index++) {
     const caption = captions[index];
-    fadeOut(caption);
+    if (caption !== targetCaption) { fadeOut(caption); }
   }
 };
 
 var showCaption = (el, event) => {
-  console.log(event.target);
-  event.stopPropagation();
-  closeCaptions();
   const projectName = el.classList[1].split("-")[1];
   const caption = document.getElementsByClassName(`caption-${projectName}`)[0];
+  console.log(event.target);
+  event.stopPropagation();
+  closeCaptions(caption);
   fadeIn(caption);
 };
 
@@ -40,5 +40,6 @@ var fadeIn = (caption) => {
 
 var fadeOut = (caption) => {
   caption.classList.remove("fadeIn");  
-  caption.style.zIndex = "-1";
+  caption.classList.add("fadeOut");
+  setTimeout(() => { caption.style.zIndex = "-1";}, 700);
 };

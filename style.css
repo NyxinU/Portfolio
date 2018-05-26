@@ -396,12 +396,13 @@ i {
   width: 90vw;
   height: 46vh;
   border-radius: 4vw; 
-  background-color: red;
+  background-color: #293248;
+  color: white;
   z-index: -1;
 }
 
 .fadeIn {
-  animation: fadeIn .6s ease-in-out
+  animation: fadeIn .6s ease-in-out forwards
 }
 
 @keyframes fadeIn {
@@ -410,7 +411,7 @@ i {
 }
 
 .fadeOut {
-  animation: fadeOut 1s linear
+  animation: fadeOut .6s ease-in-out forwards
 }
 
 @keyframes fadeOut {
