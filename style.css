@@ -287,7 +287,7 @@
 
 .badge-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 1em;
 }
 
@@ -299,7 +299,7 @@
 }
 
 i {
-  font-size: 10vw;
+  font-size: 13vw;
 }
 
 .badge-label {
@@ -373,15 +373,52 @@ i {
   /* box-shadow: 5px 10px 8px #888888; */
 }
 
+.description {
+  /* display: none; */
+  position: absolute;
+  z-index: 4;
+}
+
 .overlay {
   position: absolute;
   width: 90vw;
   height: 46vh;
   border-radius: 4vw; 
   z-index: 2;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
-.overlay-artis {
+.caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 90vw;
+  height: 46vh;
+  border-radius: 4vw; 
+  background-color: red;
+  z-index: -1;
+}
+
+.fadeIn {
+  animation: fadeIn .6s ease-in-out
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fadeOut {
+  animation: fadeOut 1s linear
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+/* .overlay-artis {
   background-color: rgba(0, 75, 30, 0.65);
 }
 
@@ -395,7 +432,7 @@ i {
 
 .overlay-leather {
   background-color: rgba(33, 30, 0, 0.65);
-}
+} */
 
 .project-title {
   position: absolute;
