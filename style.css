@@ -368,7 +368,7 @@ i {
   display: flex;
   align-items: center;
   width: 90vw;
-  height: 46vh;
+  height: 55.62vw;
   margin-bottom: 4vh;
   /* box-shadow: 5px 10px 8px #888888; */
 }
@@ -382,7 +382,7 @@ i {
 .overlay {
   position: absolute;
   width: 90vw;
-  height: 46vh;
+  height: 55.62vw;
   border-radius: 4vw; 
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.65);
@@ -391,14 +391,21 @@ i {
 .caption {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  flex-direction: column;
   position: absolute;
   width: 90vw;
-  height: 46vh;
+  height: 55.62vw;
   border-radius: 4vw; 
   background-color: #293248;
   color: white;
   z-index: -1;
+}
+
+.caption-text {
+  font-size: 4.5vw;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .fadeIn {
@@ -437,6 +444,7 @@ i {
 
 .project-title {
   position: absolute;
+  font-size: 9vw;
   color: white;
   z-index: 3;
 }

@@ -1,9 +1,10 @@
 var overlays = document.getElementsByClassName("overlay");
+var titles = document.getElementsByClassName("project-title");
 
-// add event listener on overlays
+// add event listener on overlays and titles
 for (let index = 0; index < overlays.length; index++) {
-  const element = overlays[index];
-  element.addEventListener("click", function(event) { showCaption(this, event); });
+  overlays[index].addEventListener("click", function(event) { showCaption(this, event); });
+  titles[index].addEventListener("click", function (event) { showCaption(this, event); });
 }
 
 var closeCaptions = (targetCaption) => {
@@ -27,7 +28,7 @@ var showCaption = (el, event) => {
 window.onclick = function (event) {
   console.log("window");
   console.log(event.target);
-  if (event.target.classList[0] !== "caption") {
+  if (event.target.classList[0] !== "caption" && event.target.classList[0] !== "caption-text") {
     closeCaptions();
   }
 };
