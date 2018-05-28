@@ -464,6 +464,7 @@ i {
   font-size: 9vw;
   color: white;
   z-index: 3;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .project-thumbnail {
