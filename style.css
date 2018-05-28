@@ -246,8 +246,8 @@
 
 .section-h {
   text-align: center;
-  font-size: 5.7vw;
-  margin-top: 6vw;
+  font-size: 6vw;
+  margin-top: 3vw;
   margin-bottom: 3vw;
 }
 
@@ -256,7 +256,7 @@ content: ""; /* This is necessary for the pseudo element to work. */
 display: block; /* This will put the pseudo element on its own line. */
 margin: 0 auto; /* This will center the border. */
 width: 40vw; /* Change this to whatever width you want. */
-padding-top: 2vh;
+padding-top: 1.5vh;
 border-bottom: .5vw solid #1FB596;
 }
 
@@ -514,10 +514,17 @@ i {
 
   .intro {
     width: 42.5vw;
+    margin-left: 5vw;
+  }
+
+  .avatar {
+    width: 14.16vw;
   }
 
   .about-message {
     margin: 0;
+    font-size: 2vw;
+    text-align: left;
   }
 
   .badges {
@@ -525,17 +532,28 @@ i {
     margin-right: 5vw;
   }
 
+  .section-h {
+    font-size: 5vw;
+  }
+
   .skills-h {
+    display: none;
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   i {
-    font-size: 8vw;
+    font-size: 4vw;
   }
 
   .icon-rspec {
-    width: 9vw;
-    padding-bottom: 16%;
+    width: 4vw;
+    padding-bottom: 20%;
+  }
+
+  .icon-webpack {
+    padding-top: 10%;
+    padding-bottom: 12%;
   }
 
   .badge-label {
