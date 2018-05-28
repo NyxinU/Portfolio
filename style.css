@@ -416,14 +416,14 @@ i {
   margin-left: auto;
   margin-right: auto;
   color: white;
-  border: .3vw solid #9f539f;
+  border: .3vw solid #1FB596;
   padding: .5vw 3vw .8vw 3vw;;
   border-radius: 4vw;
 }
 
 .project-link:hover {
   color: white;
-  background: #9f539f;
+  background: #1FB596;
   cursor: pointer;
   text-decoration: none;
 }
