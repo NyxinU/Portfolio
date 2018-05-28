@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* banner */
 .post-header {
   position: relative;
@@ -249,17 +257,18 @@
 .section-h {
   text-align: center;
   font-size: 6vw;
+  color: #252627;
   margin-top: 3vw;
   margin-bottom: 3vw;
 }
 
 .section-h:after {
-content: ""; /* This is necessary for the pseudo element to work. */ 
-display: block; /* This will put the pseudo element on its own line. */
-margin: 0 auto; /* This will center the border. */
-width: 40vw; /* Change this to whatever width you want. */
-padding-top: .5vh;
-border-bottom: .5vw solid #1FB596;
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 40vw; /* Change this to whatever width you want. */
+  padding-top: .5vh;
+  border-bottom: .5vw solid #1FB596;
 }
 
 .intro {
@@ -282,6 +291,7 @@ border-bottom: .5vw solid #1FB596;
 .about-message {
   text-align: center;
   font-size: 3vw;
+  color: #252627;
 }
 
 .badge-container {
@@ -303,6 +313,7 @@ i {
 
 .badge-label {
   font-size: 3vw;
+  color: #252627;
 }
 
 .icon-reactjs {
@@ -412,6 +423,7 @@ i {
 
 .project-link {
   font-size: 4.5vw;
+  text-decoration: none;
   font-weight: 200;
   margin-left: auto;
   margin-right: auto;
