@@ -1,17 +1,19 @@
 var overlays = document.getElementsByClassName("overlay");
 var titles = document.getElementsByClassName("project-title");
+var captions = document.getElementsByClassName("caption");
 
 // add event listener on overlays and titles
 for (let index = 0; index < overlays.length; index++) {
   overlays[index].addEventListener("click", function(event) { showCaption(this, event); });
   titles[index].addEventListener("click", function (event) { showCaption(this, event); });
+  captions[index].addEventListener("animationend", function() { changeZIndex(this) }, false);
 }
 
 var closeCaptions = (targetCaption) => {
-  const captions = document.getElementsByClassName("caption");
-  for (let index = 0; index < captions.length; index++) {
-    const caption = captions[index];
-    if (caption !== targetCaption) { fadeOut(caption); }
+  const allCaptions = document.getElementsByClassName("caption");
+  for (let index = 0; index < allCaptions.length; index++) {
+    const caption = allCaptions[index];
+    if (caption !== targetCaption && caption.classList[2] === "fadeIn" ) { fadeOut(caption); }
   }
 };
 
@@ -35,13 +37,17 @@ window.onclick = function (event) {
 var fadeIn = (caption) => {
   caption.classList.remove("fadeOut"); 
   caption.style.zIndex = "4";
-  // caption.style.display = "flex";
   caption.classList.add("fadeIn");
 };
 
 var fadeOut = (caption) => {
+  console.log(caption);
   caption.classList.remove("fadeIn");  
   caption.classList.add("fadeOut");
-  setTimeout(() => { caption.style.zIndex = "-1";}, 700);
-  // caption.style.display = "none"
+};
+
+var changeZIndex = (caption) => {
+  if (caption.classList[2] === "fadeOut") {
+    caption.style.zIndex = "-1";
+  }
 };
