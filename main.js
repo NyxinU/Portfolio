@@ -35,6 +35,7 @@ window.onclick = function (event) {
 var fadeIn = (caption) => {
   caption.classList.remove("fadeOut"); 
   caption.style.zIndex = "4";
+  // caption.style.display = "flex";
   caption.classList.add("fadeIn");
 };
 
@@ -42,4 +43,5 @@ var fadeOut = (caption) => {
   caption.classList.remove("fadeIn");  
   caption.classList.add("fadeOut");
   setTimeout(() => { caption.style.zIndex = "-1";}, 700);
+  // caption.style.display = "none"
 };
