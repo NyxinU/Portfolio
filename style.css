@@ -515,6 +515,7 @@ i {
 
 @media only screen and (min-width: 768px) {
   .hero-image {
+    display: block;
     width: 85%;
     height: 100%;
     margin-left: 7.5%;
@@ -523,7 +524,7 @@ i {
   .section-background {
     position: absolute;
     width: 100%;
-    height: 99.4%;
+    height: 100%;
     background-color: #23bda0;
     z-index: -2;
   }
