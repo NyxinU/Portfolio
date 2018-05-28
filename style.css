@@ -587,11 +587,11 @@ i {
 
   .project-container, .overlay, .caption {
     width: 42.3vw;
-    height: 27.19vw;
+    height: 26.14vw;;
   }
 
   .project-title {
-    margin-top: 12.5%;
+    margin-top: 10%;
     font-size: 5vw;
   }
 
