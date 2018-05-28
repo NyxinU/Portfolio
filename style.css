@@ -498,10 +498,7 @@ i {
   color: #1FB596;
 }
 
-.fa:hover {
-  font-size: 7vw;
-  cursor: pointer;
-}
+
 
 .fa-copyright, .copyright {
   text-align: center;
@@ -598,8 +595,13 @@ i {
     font-size: 5vw;
   }
 
-  .caption-text, .project-link{
+  .caption-text, .project-link {
     font-size: 2vw;
+  }
+
+  .fa:hover {
+    font-size: 7vw;
+    cursor: pointer;  
   }
 
 }
