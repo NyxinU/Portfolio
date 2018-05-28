@@ -12,18 +12,22 @@ for (let index = 0; index < overlays.length; index++) {
 }
 
 var closeCaptions = (targetCaption) => {
-  const allCaptions = document.getElementsByClassName("caption");
-  for (let index = 0; index < allCaptions.length; index++) {
-    const caption = allCaptions[index];
-    if (caption !== targetCaption && caption.classList[2] === "fadeIn" ) { fadeOut(caption); }
-  }
+  // const allCaptions = document.getElementsByClassName("caption");
+  // for (let index = 0; index < allCaptions.length; index++) {
+  //   const caption = allCaptions[index];
+  //   if (caption !== targetCaption && caption.classList[2] === "fadeIn" ) { fadeOut(caption); }
+  // }
+
+  const caption = document.getElementsByClassName("fadeIn")[0];
+  if (caption) { fadeOut(caption); }
+  console.log(caption);
 };
 
 var showCaption = (el, event) => {
   const projectName = el.classList[1].split("-")[1];
   const caption = document.getElementsByClassName(`caption-${projectName}`)[0];
   event.stopPropagation();
-  closeCaptions(caption);
+  closeCaptions();
   fadeIn(caption);
 };
 

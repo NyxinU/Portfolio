@@ -445,7 +445,7 @@ i {
 } */
 
 .fadeIn {
-  animation: fadeIn .6s ease-in-out forwards
+  animation: fadeIn .6s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
@@ -454,7 +454,7 @@ i {
 }
 
 .fadeOut {
-  animation: fadeOut .6s ease-in-out forwards
+  animation: fadeOut .6s ease-in-out forwards;
 }
 
 @keyframes fadeOut {
