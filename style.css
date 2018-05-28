@@ -24,7 +24,7 @@ body {
 .window-background {
   animation: background-color 20s cubic-bezier(.81,-0.46,.19,1.33) infinite;
   position: absolute;
-  height: 100%;
+  height: 90%;
   width: 50%;
   z-index: -1;
 }
