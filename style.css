@@ -478,7 +478,7 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 14vw;;
+  height: 16vw;;
   margin-left: 5vw;
   margin-right: 5vw;
   background-color: rgb(50, 50, 50);
@@ -489,17 +489,15 @@ i {
 .social {
   display: flex;
   justify-content: space-around;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
   margin-top: 3vw;
 }
 
 .fa {
-  font-size: 4vw;
+  font-size: 6vw;
   color: #1FB596;
 }
-
-
 
 .fa-copyright, .copyright {
   text-align: center;
@@ -601,9 +599,26 @@ i {
     font-size: 2vw;
   }
 
+  .contact {
+    height: 14vw;
+  }
+
+  .social {
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  .fa {
+    font-size: 4vw;
+  }
+
   .fa:hover {
-    font-size: 7vw;
+    font-size: 5vw;
     cursor: pointer;  
+  }
+
+  .fa-copyright {
+    font-size: 2vw;
   }
 
 }
