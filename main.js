@@ -47,3 +47,4 @@ var hideCaption = (caption) => {
     caption.style.zIndex = "-1";
   }
 };
+
