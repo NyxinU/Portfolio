@@ -5,8 +5,10 @@ var captions = document.getElementsByClassName("caption");
 // add event listener on overlays and titles
 for (let index = 0; index < overlays.length; index++) {
   overlays[index].addEventListener("click", function(event) { showCaption(this, event); });
+  overlays[index].addEventListener("mouseenter", function(event) { showCaption(this, event); });
   titles[index].addEventListener("click", function (event) { showCaption(this, event); });
   captions[index].addEventListener("animationend", function() { changeZIndex(this) }, false);
+  captions[index].addEventListener("mouseleave", function(event) { closeCaptions(); });
 }
 
 var closeCaptions = (targetCaption) => {
@@ -41,7 +43,6 @@ var fadeIn = (caption) => {
 };
 
 var fadeOut = (caption) => {
-  console.log(caption);
   caption.classList.remove("fadeIn");  
   caption.classList.add("fadeOut");
 };
