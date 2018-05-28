@@ -18,7 +18,6 @@ var closeCaptions = (targetCaption) => {
 var showCaption = (el, event) => {
   const projectName = el.classList[1].split("-")[1];
   const caption = document.getElementsByClassName(`caption-${projectName}`)[0];
-  console.log(event.target);
   event.stopPropagation();
   closeCaptions(caption);
   fadeIn(caption);

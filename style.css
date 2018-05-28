@@ -89,38 +89,6 @@
   width: 0;
 } 
 
-@media only screen and (min-width: 768px) {
-  .hero-image {
-    width: 85%;
-    height: 100%;
-    margin-left: 7.5%;
-  }
-
-  .section-background {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #23bda0;
-    z-index: -2;
-  }
-
-  .window-background {
-    left: 12.5%;
-  }
-
-  /* terminal */
-  .fake-terminal {
-    width: 30%;
-    left: 36.9%;
-  }
-  
-  .fake-screen > p {
-    font-size: 1.6vw;
-  }
-}
-
-
-
 .fake-minimize {
   background-color: #ffc100;
   border-color: #9d802c;
@@ -276,13 +244,44 @@
   width: 100vw;
 }
 
+.section-h {
+  text-align: center;
+  font-size: 5.7vw;
+  margin-top: 6vw;
+  margin-bottom: 3vw;
+}
+
+.section-h:after {
+content: ""; /* This is necessary for the pseudo element to work. */ 
+display: block; /* This will put the pseudo element on its own line. */
+margin: 0 auto; /* This will center the border. */
+width: 40vw; /* Change this to whatever width you want. */
+padding-top: 2vh;
+border-bottom: .5vw solid #1FB596;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .avatar-container {
   display: block;
+  margin-bottom: 1vw;
 }
 
 .avatar {
   border-radius: 50%;
-  width: 25vw;
+  width: 33.33vw;
+  margin-bottom: 2vw;
+}
+
+.about-message {
+  text-align: center;
+  font-size: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .badge-container {
@@ -344,12 +343,15 @@ i {
   color: #4d4d4d;
 }
 
-.icon-git {
-  color: #DC5198;
+.icon-rspec {
+  width: 14vw;
+  padding-top: 12%;
+  padding-bottom: 20%;
 }
 
-.icon-npm {
-  color: #E60000;
+.icon-webpack {
+  padding-top: 18%;
+  padding-bottom: 25%;
 }
 
 .icon-postgres {
@@ -366,11 +368,9 @@ i {
 .project-container {
   justify-content: center;
   display: flex;
-  align-items: center;
   width: 90vw;
   height: 55.62vw;
   margin-bottom: 4vh;
-  /* box-shadow: 5px 10px 8px #888888; */
 }
 
 .description {
@@ -404,9 +404,45 @@ i {
 
 .caption-text {
   font-size: 4.5vw;
+  text-align: center;
   margin-left: 8%;
   margin-right: 8%;
+  margin-bottom: 4%;
 }
+
+.project-link {
+  font-size: 4.5vw;
+  font-weight: 200;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border: .3vw solid #9f539f;
+  padding: .5vw 3vw .8vw 3vw;;
+  border-radius: 4vw;
+}
+
+.project-link:hover {
+  color: white;
+  background: #9f539f;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* .caption-text-artis {
+  padding-left: 3%;
+}
+
+.caption-text-wonderlist {
+  padding-left: 2%;
+}
+
+.caption-text- {
+  padding-left:
+}
+
+.caption-text-leather {
+  padding-left: 1%;
+} */
 
 .fadeIn {
   animation: fadeIn .6s ease-in-out forwards
@@ -426,24 +462,9 @@ i {
   to {opacity: 0;}
 }
 
-/* .overlay-artis {
-  background-color: rgba(0, 75, 30, 0.65);
-}
-
-.overlay-wunderlist {
-  background-color: rgba(25, 10, 0, 0.65);
-}
-
-.overlay-brain {
-  background-color: rgba(0, 85, 99, 0.65);
-}
-
-.overlay-leather {
-  background-color: rgba(33, 30, 0, 0.65);
-} */
-
 .project-title {
   position: absolute;
+  margin-top: 23%;
   font-size: 9vw;
   color: white;
   z-index: 3;
@@ -452,5 +473,73 @@ i {
 .project-thumbnail {
   width: 100%;
   height: 100%;
-  border-radius: 4vw; 
+  border-radius: 3vw; 
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-image {
+    width: 85%;
+    height: 100%;
+    margin-left: 7.5%;
+  }
+
+  .section-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #23bda0;
+    z-index: -2;
+  }
+
+  .window-background {
+    left: 12.5%;
+  }
+
+  /* terminal */
+  .fake-terminal {
+    width: 30%;
+    left: 36.9%;
+  }
+  
+  .fake-screen > p {
+    font-size: 1.6vw;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro {
+    width: 42.5vw;
+  }
+
+  .about-message {
+    margin: 0;
+  }
+
+  .badges {
+    width: 42.5vw;
+    margin-right: 5vw;
+  }
+
+  .skills-h {
+    margin-top: 0;
+  }
+
+  i {
+    font-size: 8vw;
+  }
+
+  .icon-rspec {
+    width: 9vw;
+    padding-bottom: 16%;
+  }
+
+  .badge-label {
+    font-size: 2vw;
+  }
+
 }

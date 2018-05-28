@@ -10,6 +10,7 @@
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
   crossorigin="anonymous"> -->
   <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -40,16 +41,22 @@
       </div>
     </div>
   </section>
+  <h1 class="section-h">About</h1>
   <section id="about" class="about">
-    <h1>About</h1>
     <div class="intro">
-      <h2>who am i</h2>
       <div class="avatar-container">
-        <img src="images/avatar.jpg" class="avatar" alt="Nixon Yiu">        
+        <img src="images/avatar.jpg" class="avatar" alt="Nixon Yiu">  
       </div>
+      <p class="about-message">
+        My passion in life is building things and solving problems.
+        <br>
+        Not only that, but I also really enjoy modifying the things I've built. 
+        <br>
+        So everything I build, I believe in making them simple and modular.
+      </p>      
     </div>
     <div class="badges">
-      <h2>badges</h2>
+      <h2 class="section-h skills-h">Skills</h2>
       <div class="badge-container">
         <div class="badge-icon">
           <i class="icon-javascript"></i>
@@ -88,12 +95,12 @@
           <small class="badge-label">React Native</small>           
         </div>
         <div class="badge-icon">
-          <i class="icon-git"></i>
-          <small class="badge-label">Git</small>
+          <img src="./images/rspec.png" class="icon-rspec">
+          <small class="badge-label">RSpec</small>
         </div>
         <div class="badge-icon">
-          <i class="icon-npm"></i>
-          <small class="badge-label">npm</small>
+          <i class="devicon-webpack-plain colored icon-webpack"></i>
+          <small class="badge-label">Webpack</small>
         </div>
         <div class="badge-icon">
           <i class="icon-postgres"></i>
@@ -103,50 +110,42 @@
     </div>
   </section>
   <section>
-    <h1>Projects</h1>
+    <h1 class="section-h">Projects</h1>
     <div class="projects-container">
       <div class="project-container">
         <div class="overlay overlay-artis"></div>
         <div id="artis" class="caption caption-artis">
-          <p class="caption-text">Mobile application for users to hire professionals at a lower price point</p>
-          <button>
-            <a href="" target="_blank">Check it out</a>
-          </button>
+          <p class="caption-text caption-text-artis">Mobile application for users to hire professionals at a lower price point</p>
+          <a href="https://nyxinu.github.io/artis_splash_page/" class="project-link" target="_blank">Visit Website</a>
         </div>
-        <h1 class="project-title">Artis</h1>
+        <h1 class="project-title title-artis">Artis</h1>
         <img src="images/artis2.jpg" class="project-thumbnail">
       </div>
       <div class="project-container">
         <div class="overlay overlay-wonderlist"></div>
         <div id="wonderlist" class="caption caption-wonderlist">
-          <p class="caption-text">Single Page Application inspired by Wunderlist and Remember the Milk</p>
-          <button>
-            <a href="" target="_blank">Check it out</a>
-          </button>
+          <p class="caption-text caption-text-wonderlist">Single Page Application inspired by Wunderlist and Remember the Milk</p>
+          <a href="http://wonder-list.herokuapp.com/#/" class="project-link" target="_blank">Visit Website</a>
         </div>
-        <h1 class="project-title">Wonderlist</h1>
+        <h1 class="project-title title-wonderlist">Wonderlist</h1>
         <img src="images/wonderlist2.jpg" class="project-thumbnail">
       </div>
       <div class="project-container">
         <div class="overlay overlay-brain"></div>
         <div id="brain" class="caption caption-brain">
-          <p class="caption-text">Two-player game that improves reaction time and pattern recognition</p>
-          <button>
-            <a href="" target="_blank">Check it out</a>
-          </button>
+          <p class="caption-text caption-text-brain">Brain Training Game for improving reaction time and pattern recognition</p>
+          <a href="http://www.brainbattles.xyz/" class="project-link" target="_blank">Visit Website</a>
         </div>
-        <h1 class="project-title">Brain Battle</h1>
+        <h1 class="project-title title-brain">Brain Battle</h1>
         <img src="images/brain_battles2.jpg" class="project-thumbnail">
       </div>
       <div class="project-container">
         <div class="overlay overlay-leather"></div>
         <div id="leather" class="caption caption-leather">
-          <p class="caption-text">I love to build things so when I'm not coding, you'll find me handmaking leather goods.</p>
-          <button>
-            <a href="" target="_blank">Check it out</a>
-          </button>
+          <p class="caption-text caption-text-leather">I love to build things so when I'm not coding, you'll find me handmaking leather goods.</p>
+          <a href="https://www.instagram.com/nyxyiu/" class="project-link" target="_blank">Visit Website</a>
         </div>
-        <h1 class="project-title">Passion Project</h1>
+        <h1 class="project-title title-leather">Passion Project</h1>
         <img src="images/leather_crafting.jpg" class="project-thumbnail">
       </div>
     </div>
