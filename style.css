@@ -486,6 +486,10 @@ i {
   margin-bottom: 1vw;
 }
 
+.contact-msg {
+  display: none;
+}
+
 .social {
   display: flex;
   justify-content: space-around;
@@ -599,13 +603,32 @@ i {
     font-size: 2vw;
   }
 
+  .contact-h {
+    display: none;
+  }
+
   .contact {
-    height: 14vw;
+    height: 16vw;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5vw;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: white;
+  }
+
+  .contact-msg {
+    display: block;
+    text-align: center;
+    color: #252627;
+    font-size: 2vw;
+    margin-bottom: 0;
   }
 
   .social {
     margin-left: 20vw;
     margin-right: 20vw;
+    margin-top: 0;
   }
 
   .fa {
@@ -617,8 +640,14 @@ i {
     cursor: pointer;  
   }
 
+  .copyright {
+    font-size: 1vw;
+    color: #252627;
+  }
+
   .fa-copyright {
-    font-size: 2vw;
+    font-size: 1vw;
+    color: #252627;
   }
 
 }
