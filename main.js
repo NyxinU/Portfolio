@@ -29,8 +29,6 @@ var showCaption = (el, event) => {
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  console.log("window");
-  console.log(event.target);
   if (event.target.classList[0] !== "caption" && event.target.classList[0] !== "caption-text") {
     closeCaptions();
   }
