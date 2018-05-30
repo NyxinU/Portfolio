@@ -298,6 +298,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 1em;
+  padding-bottom: 3vw;
 }
 
 .badge-icon {
