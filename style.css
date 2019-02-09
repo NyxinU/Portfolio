@@ -356,13 +356,13 @@ i {
   color: #4d4d4d;
 }
 
-.icon-rspec {
+.icon-img {
   width: 13vw;
 }
 
-.icon-webpack {
-  /* padding-top: 18%;
-  padding-bottom: 25%; */
+.icon-swift {
+  width: 13vw;
+  border-radius: .75em
 }
 
 .icon-postgres {
@@ -558,20 +558,12 @@ i {
     font-size: 4vw;
   }
 
-  
-
   i {
     font-size: 4vw;
   }
 
-  .icon-rspec {
+  .icon-img {
     width: 4vw;
-    /* padding-bottom: 20%; */
-  }
-
-  .icon-webpack {
-    /* padding-top: 10%;
-    padding-bottom: 12%; */
   }
 
   .badge-label {
